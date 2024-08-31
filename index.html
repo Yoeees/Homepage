@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    
+    <title>SH Detective Agency</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav">
+                <div id="logo">
+                    <h1 class="logo-title">SH Detective Agency</h1>
+                </div>
+                <ul id="planet-list">
+                    <li class="list-item"><a href="#">Read Cases</a></li>
+                    <li class="list-item"><a href="#">Contacts</a></li>
+                    <li class="list-item"><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="hero-section">
+        <div id="intro-content">
+            <div id="intro-text">
+                <h1>SH Detective Agency</h1>
+                <p>Nestled in the heart of London, Sherlock Holmes Detective Agency
+                     stands as a beacon of justice, where the world's most perplexing mysteries 
+                     are unraveled by an extraordinary team of investigators. Founded by the legendary detective Sherlock Holmes, this elite agency combines classical investigative brilliance with cutting-edge technology to solve cases that baffle even the most seasoned law enforcement agencies</p>
+                 </p>
+            </div>
+            <div id="hero-img"></div>
+        </div>
+    </section>
+    <main>
+        <div class="title-div">
+            <h2 id="main-section-title">Notable Cases</h2>
+        </div>
+        <div class="cases">
+            <div class="case">
+                <img src="./img/A study in scarlet.png" width="300" height="400">
+                <p>A Study in Scarlet</p>
+                <br>
+                <p>1887</p>
+            </div>
+            <div class="case">
+                <img src="./img/Hound of Baskervilles.jpg"  width="300" height="400">
+                <p style="font-size: 18px;">Hound of Baskervilles</p>
+                <br>
+        
+                <p>1902</p>
+            </div>
+            <div class="case">
+                <img src="./img/The Problem of Thor Bridge.jpg"  width="300" height="378"  object-fit: contain;>
+                <p style="font-size: 18px; ">The Problem of Thor Bridge</p>
+                <br>
+    
+                <p>1922</p>
+            </div>
+            <div class="case">
+                <img src="./img/The Disappearance of Lady Frances Carfax.jpg " width="300" height="377">
+                <p style="font-size: 18px;">The Disappearance of Lady Frances Carfax</p>
+                <br>
+                <p>1911</p>
+            </div>
+        </div>
+        <div class="quote-section">
+            <p class="quote"><i>How often have I said to you that when you have eliminated the impossible, whatever remains, however improbable, must be the truth?</i></p>
+            <p
+            class="sherlock"><strong>-Sherlock Holmes</strong></p>
+        </div>
+        <div class = "layer4">
+            <div class = "layer4Bg">
+                <div class = "layer4Content">
+                    <div class = "layer4Text">
+                        <div class = "layer4TextHeading">
+                            Is there something strange? Something missing? Do you need help?
+                        </div>
+                        <br>
+                        <div class = "layer4TextSubtext">
+                            Drop us a line and let’s crack the case together! Our detectives are always on the case, ready to assist you                        </div>
+                    </div>
+                    <div class = "layer4ContactContainer">
+                        <a class = "layer4Contact" >
+                            Contact!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Modal -->
+            <div id="contact-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Case Description:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+    </main>
+  
+    <footer>
+        <a href="https://github.com/Yoeees" id="github-link">
+          <img src="https://img.icons8.com/windows/32/ffffff/github.png" />
+         Yoeees on GitHub</a
+        >
+      </footer>
+</html>

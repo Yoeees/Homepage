@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    background-color: #000;
+    font-size: 1.4rem;
+}
+
+#logo {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav {
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#planet-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+#planet-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#planet-list a:hover {
+    color: #00a7f7;
+}
+
+/* Hero Section */
+#hero-section {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-content {
+    display: flex;
+    gap: 1rem;
+    margin: 0 4rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#intro-text {
+    width: 50%;
+    padding: 4rem;
+}
+
+#intro-text h1 {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+#hero-img {
+    width: 50%;
+    height: 60vh;
+    background: url(./img/sherloc.jpg) no-repeat center/cover;
+    border-radius: 58% 42% 78% 22% / 30% 60% 40% 70%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Section */
+.title-div {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#main-section-title {
+    padding: 2rem;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cases {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+    background-color: #000;
+}
+
+.case {
+    max-width: 20%;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #3d3c3c;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.case img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.case:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    border-color: #00a7f7;
+}
+
+/* Case Section */
+#case-section {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.case-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.case-button button {
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 60px;
+}
+
+.case-button button:hover {
+    color: #fff;
+    background-color: #616467;
+}
+
+/* Footer */
+footer {
+    padding: 5vh 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+}
+
+footer a {
+
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #00a7f7;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    #nav {
+        margin: 0 1rem;
+    }
+
+    #intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro-text {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+    }
+
+    .case {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #nav {
+        margin: 0;
+    }
+
+    #planet-list {
+        display: none;
+    }
+
+    #intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro-text {
+        padding: 3rem;
+        width: 100%;
+        height: auto;
+    }
+
+    #hero-img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .case {
+        width: 90%;
+    }
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    
+}
+
+.quote {
+    max-width: 820px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 130px;
+    color: #eeeeee;
+    
+   
+}
+
+.sherlock {
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 25px;
+    color: white;
+}
+
+.layer4Bg {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.layer4Content {
+    background:rgb(32, 32, 32);
+    width: 60em;
+    padding: 2em 0;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 2em;
+
+}
+
+.layer4Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 2em 0 4em;
+    line-height: 1.3em;
+}
+
+.layer4TextHeading {
+    font-size: 1.1em;
+    font-family: "sunflower";
+    font-weight: bold;
+}
+
+.layer4TextSubtext {
+    margin-top: 3px;
+}
+
+
+.layer4ContactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5em 0 3em;
+}
+
+.layer4Contact {
+    color: white;
+    border: 0.15em solid white;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(32, 32, 32, 0.5));
+    border-radius: 0.4em;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "kawashiro";
+}
+
+.layer4Contact:hover {
+    background-image: linear-gradient(rgba(0, 171, 194, 0.7), rgba(1, 68, 68, 0.7));
+}
+
+
+/* Modal Background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    color: white;
+
+    
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #00a7f7;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #007bb5;
+}
